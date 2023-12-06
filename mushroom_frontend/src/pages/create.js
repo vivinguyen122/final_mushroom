@@ -69,6 +69,8 @@ export default class Create extends React.Component {
         this.setState({newItemText: e.target.value})
     }
 
+    // attempt to do fetch from backend
+
     render() {
         const newItemText = this.state.newItemText
         const showAddItemInput = this.state.showAddItemInput
