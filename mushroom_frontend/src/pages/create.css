@@ -55,6 +55,27 @@
     text-decoration: none;
     color:green;
     margin-bottom: 5px;
+    background-color: #f2ffef;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forumformat{
+    padding: 5px;
 }
 
 /*detail view*/
+.detailimgDisplay{
+    width: 150px;
+    /*background-color: #61dafb;*/
+    border-radius: 8px; /*round border*/
+    padding: 10px;
+
+}
+
+.detailtextbox{
+    margin: 10px;
+    display: inline-grid;
+}

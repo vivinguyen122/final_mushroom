@@ -69,13 +69,16 @@ class Home extends Component {
                         <ul>
                             {/*show all the forum*/}
                             {this.state.formattedForums.slice(0, 2).map(forum => (
-                                <li key={forum.id}>
-                                    <strong>{forum.title}</strong>
-                                    <p>{forum.description}</p>
-                                    {/*make the date look prettier?*/}
-                                    <p>Time: {reformatDate(forum.datetime)} {reformatTime(forum.datetime)}</p>
-                                    <p>User: {forum.user.username}</p>
-                                </li>
+                                <div className={"card"}>
+                                    <Link to={`/forums/${forum.id}`} className={"links m-1"}>View Details</Link>
+                                    <div className={"forumformat"}>
+                                        <strong>{forum.title}</strong>
+                                        <p>{forum.description}</p>
+                                        {/*make the date look prettier?*/}
+                                        <p className={"smallinfotext"}>Time: {reformatDate(forum.datetime)} {reformatTime(forum.datetime)}</p>
+                                        <p className={"smallinfotext"}>User: {forum.user.username}</p>
+                                    </div>
+                                </div>
                             ))}
                         </ul>
                     </div>

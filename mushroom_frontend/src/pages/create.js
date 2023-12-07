@@ -72,6 +72,7 @@ export default class Create extends React.Component {
     // attempt to do fetch from backend
 
     render() {
+
         const newItemText = this.state.newItemText
         const showAddItemInput = this.state.showAddItemInput
         const showPostType = this.state.showPostType
