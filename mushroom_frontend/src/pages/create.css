@@ -2,5 +2,59 @@
     height: 100%;
     box-sizing: border-box;
     width: 100%;
+}
+
+/*home style*/
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* Number of lines to display before adding ... */
+    -webkit-line-clamp: 2;
+}
+
+.smallinfotext{
+    font-size: 10px;
+    color: dimgrey;
+}
+
+.photosizing{
+    height: 200px;
+    border-radius: 8px;
+    align-content: center;
+}
+
+.card.postformat {
+    padding: 10px;
+    width: 32%;
+    margin: 5px;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    border-radius: 8px; /*round border*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: Add a box shadow for a subtle lift */
+}
+
+.textinfodisplay {
+    border-radius: 8px;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: #f3f3f3; /* Replace "yourColor" with the desired background color */
 
 }
+
+.imgdisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.links{
+    text-decoration: none;
+    color:green;
+    margin-bottom: 5px;
+}
+
+/*detail view*/

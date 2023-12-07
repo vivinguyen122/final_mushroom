@@ -1,6 +1,6 @@
 import {Button, Container, Form} from "react-bootstrap";
 import React, {Component, useState} from "react";
-import textStyle from './create.css'
+import './create.css'
 
 let toDoItems  =[
     {id: 1, title: 'test', completed: true},

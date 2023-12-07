@@ -2,7 +2,7 @@ import './App.css';
 import './pages/create';
 import React, {Component, useContext, useRef, useState} from "react";
 import {Navbar, Nav, Container, Button} from 'react-bootstrap'
-import {Create, Home, List, Login, Results} from './pages'
+import {Create, Home, List, Login, Results, PostDetails, ForumDetails} from './pages'
 import {Link, Route, Routes, useParams, useLocation, useNavigate} from "react-router-dom";
 import linkStyle from './index.css'
 
@@ -127,6 +127,12 @@ class App extends Component {
               <Route path={'list'} element={<List/>}></Route>
               <Route path={'create'} element={<Create/>}></Route>
               <Route path={'results'} element={<Results/>}></Route>
+
+              {/*detail page of post*/}
+              <Route path={'/post/:id'} element={<PostDetails/>} />
+
+              {/*detail page of forum*/}
+              <Route path={'/forum/:forumId'} element={<ForumDetails/>} />
             </Routes>
           </>
         </main>
